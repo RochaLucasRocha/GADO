@@ -26,11 +26,9 @@ a:hover{
 }
 body{    
     background-color: var(--cor1);
-    margin: 0 auto;
     font-family: var(--font1);
     background-image: url(../imagem/fundo.png);
     background-size: 200px;
-    
 }
 
 
@@ -45,7 +43,7 @@ body{
     text-align: center;
     padding-top: 70px;
     font-family: var(--font2);
-    color: rgb(0, 0, 0);
+    color: black;
     font-size: 5em;
 }
 @media(max-width: 800px){
@@ -67,7 +65,7 @@ body{
     "relatorio relatorio"
     ;
     max-width: 800px;
-    margin: auto;
+    margin: 0 auto;
 }
 .pago{
     grid-area: pago;
@@ -75,19 +73,16 @@ body{
     font-family: var(--font2);
 }
 .valor{
-    display: inline block;
     background-image: linear-gradient(to right, var(--cor5), var(--cor1));
     border-radius: 0 0 5px 5px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.700);
-    position: relative;
+    box-shadow: 5px 5px 13px var(--cor5);
     padding: 5px;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 .itens{
-    display: block;
     grid-area: lista;
     margin: 25px 10px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: var(--font2);
 }
 .itens li{
@@ -102,13 +97,13 @@ body{
     display: flex;
     align-items: flex-start; /* importante para controlar a quantidade*/
     margin: 25px auto;
-    margin-left: 150px;
+    margin-left: 115px;
     font-family: var(--font1);
     color: rgb(73, 4, 4);
     font-weight: bolder;
 }
 .mf{
-    width: 100px;
+    width: 120px;
     text-align: center;
     background-image: linear-gradient(to right, var(--cor5), var(--cor1));
     border-radius: 5px;
@@ -125,13 +120,13 @@ body{
     font-size: 3em;
     line-height: 1em;
     margin: 0 auto;
+    padding: 3px;
 }
 .rotulo{
     background-color: var(--cor5);
     color: white;
     border-radius: 0 0 5px 5px;
     padding: 5px 0;
-    position: relative;
     top: 2px;
 }
 .cont{
@@ -139,18 +134,11 @@ body{
     display: flex;
     margin: 0 auto;
     font-family: var(--font2);
-    font-size: 1.3em;
-    font-weight: bold;
 }
 .rel{
-    width: 150px;
-    text-align: center;
-    border-radius: 10px;
-    position: relative;
     margin: 25px;
 }
 .imagemCad{
-    border-radius: 10px 10px 0 0;
     max-width: 150px;
 }
 @media(max-width : 800px){
@@ -189,7 +177,6 @@ body{
 
 /**/
 .footer{
-   
     background-image: linear-gradient(to right, var(--cor5), var(--cor1));
     padding: 20px;
     text-align: center;
@@ -251,7 +238,6 @@ body{
     }
     .imgsid{
         max-width: 80px;
-        
     }
     .sidenav p{
         max-width: 130px;
