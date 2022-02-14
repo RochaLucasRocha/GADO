@@ -1,0 +1,277 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+:root{
+    --font1: font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Akaya Telivigala', cursive;
+
+    --cor1: #99ADC2;
+    --cor2: #5F90C2;
+    --cor3: #5D6975;
+    --cor4: #45688C;
+    --cor5: #343B42;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+body{    
+    background-color: var(--cor1);
+    margin: 0 auto;
+    font-family: var(--font1);
+    background-image: url(../imagem/fundo.png);
+    background-size: 200px;
+    
+}
+
+
+/**/
+.header{
+    background-image: url(../imagem/gado.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+.header > h1{
+    text-align: center;
+    padding-top: 70px;
+    font-family: var(--font2);
+    color: rgb(0, 0, 0);
+    font-size: 5em;
+}
+@media(max-width: 800px){
+    .header{
+        height: 140px;
+        background-size: 70vh;
+        background-color: var(--cor2);
+        font-size: 0.7em;
+    }
+}
+
+/**/
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:  
+    "pago pago"
+    "lista controle"
+    "relatorio relatorio"
+    ;
+    max-width: 800px;
+    margin: auto;
+}
+.pago{
+    grid-area: pago;
+    text-align: center;
+    font-family: var(--font2);
+}
+.valor{
+    display: inline block;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor1));
+    border-radius: 0 0 5px 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.700);
+    position: relative;
+    padding: 5px;
+    font-size: 2em;
+}
+.itens{
+    display: block;
+    grid-area: lista;
+    margin: 25px 10px;
+    font-size: 1.5em;
+    font-family: var(--font2);
+}
+.itens li{
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.300);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 3px;
+}
+.controle{
+    grid-area: controle;
+    display: flex;
+    align-items: flex-start; /* importante para controlar a quantidade*/
+    margin: 25px auto;
+    margin-left: 150px;
+    font-family: var(--font1);
+    color: rgb(73, 4, 4);
+    font-weight: bolder;
+}
+.mf{
+    width: 100px;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor1));
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.700);
+    position: relative;
+}
+.mf:first-child{
+    margin-right: 30px;
+}
+.controle span{
+    display: block;
+}
+.qtd{
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0 auto;
+}
+.rotulo{
+    background-color: var(--cor5);
+    color: white;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 0;
+    position: relative;
+    top: 2px;
+}
+.cont{
+    grid-area: relatorio;
+    display: flex;
+    margin: 0 auto;
+    font-family: var(--font2);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.rel{
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    margin: 25px;
+}
+.imagemCad{
+    border-radius: 10px 10px 0 0;
+    max-width: 150px;
+}
+@media(max-width : 800px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "pago"
+        "lista"
+        "controle"
+        "relatorio";
+    }
+    .pago{
+        font-size: 0.7em;
+    }
+    .valor{
+        border-radius: 0px;
+    }
+    .itens{
+        display: block;
+        margin: 20px 10px;
+    }
+    .controle{
+        margin: 0 auto;
+        font-size: 0.7em;
+    }
+    .rel{
+        margin-left: 5px;
+        max-width: 100px;
+        font-size: 0.9em;
+    }
+    .imagemCad{
+       max-width: 120px;
+    }
+}
+
+/**/
+.footer{
+   
+    background-image: linear-gradient(to right, var(--cor5), var(--cor1));
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 1.2em;
+}
+@media (max-width: 450px){
+    .footer{
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+/*Configuração adicional*/
+/*CONFIGURAÇÃO PARA cadastro.hatml*/
+.sidenav{
+    padding: 30px;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 1.5em;
+}
+.ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.li{
+    margin: 25px;
+}
+.li a:hover{
+    text-decoration: none;
+}
+.sidenav  p{
+    background-color: rgba(0, 0, 0, 0.384);
+    border-radius: 5px;
+    padding: 3px;
+}
+.linksid{
+    margin: 20px 45px;
+}
+.imgsid{
+    max-width: 160px;
+}
+@media(max-width: 800px){
+    .sidenav{
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+    .sidenav .ul{
+        display: flex;
+    }
+    .sidenav .ul .li{
+        flex: 1 0 60px;
+        padding: 0 10px;
+    }
+    .sidenav{/* criei um novo aqui para posicionar o paddnig*/
+        padding: 30px;
+    }
+    .imgsid{
+        max-width: 80px;
+        
+    }
+    .sidenav p{
+        max-width: 130px;
+    }
+}
+
+/*CONFIGURAÇÃO PARA compra.hatml*/
+.dadoscompra{
+    font-family: var(--font2);
+    font-size: 1.5em;
+    margin: 25px;
+}
+.dados1{
+    background-color: rgba(0, 0, 0, 0.411);
+    margin: 3px;
+}
+.log{
+    margin: 15px;
+}
+.logo{
+    max-height: 250px;
+    margin-left: 50px;
+}
