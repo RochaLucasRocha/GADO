@@ -22,21 +22,40 @@
         </div>
 
         <div class="dadoscompra">
-            <p class="dados1">Data: </p>
-            <p class="dados1">Identificação: </p>
-            <p class="dados1">Idade: </p>
-            <p class="dados1">Peso: </p>
-            <p class="dados1">Preço: </p>
-            <p class="dados1">Sexo: </p>
-            <p class="dados1">Vendedor: </p>
+            <p class="dados1">Data: 
+                <input type="date" name="data" id="data">
+            </p>
+            <p class="dados1">Identificação: 
+                <input type="number" name="identdd" id="identdd">
+            </p>
+            <p class="dados1">Idade: 
+                <input type="number" name="idade" id="idade">
+            </p>
+            <p class="dados1">Peso: 
+                <input type="number" name="peso" id="peso">
+            </p>
+            <p class="dados1">Preço: 
+                <input type="number" name="preco" id="preco">
+            </p>
+            <p class="dados1">Sexo: 
+                <input type="radio" name="radsex" id="macho" checked>
+                <label for="macho">Macho</label>
+                <input type="radio" name="radsex" id="femea">
+                <label for="femea">Femea</label>
+            </p>
+            <p class="dados1">Vendedor: 
+                <input type="text" name="vend" id="vend">
+            </p>
+            <input type="button" value="Cadastrar" onclick="cadastrar()">
         </div>
         <div class="log">
-            <img src="../imagem/logo.png" class="logo" alt="imagem da logo">
+            
         </div>
         
     </main>
     <footer class="footer">
         <p>Site criado por <a href="https://www.facebook.com/lucas.rocha.140" target="_blank">Lucas Rocha</a> para controle de animais.</p>
     </footer>
+    <script src="../JavaScript/compra.js"></script>
 </body>
 </html>

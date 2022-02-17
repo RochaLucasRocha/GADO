@@ -40,17 +40,18 @@ body{
     height: 200px;
 }
 .header > h1{
-    padding-top: 70px;
     text-align: center;
     font-family: var(--font2);
     color: black;
     font-size: 5em;
+    line-height: 300px;
 }
 .header > a{
     text-align: center;
     font-family: var(--font2);
     color: black;
     font-size: 2.5em;
+    line-height: 300px;
 }
 @media(max-width: 800px){
     .header{
@@ -58,6 +59,12 @@ body{
         background-size: 70vh;
         background-color: var(--cor2);
         font-size: 0.7em;
+    }
+    .header > h1{
+        line-height: 200px;
+    }
+    .header > a{
+        line-height: 200px;
     }
 }
 
