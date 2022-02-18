@@ -257,16 +257,37 @@ body{
 .dadoscompra{
     font-family: var(--font2);
     font-size: 1.5em;
-    margin: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
 .dados1{
-    background-color: rgba(0, 0, 0, 0.411);
-    margin: 3px;
+    background-color: rgba(0, 0, 0, 0.300);
+    margin: 5px;
+    padding-left: 7px;
+    max-width: 400px;
+    border-radius: 5px;
+}
+.dados1 input{
+    background-color: rgba(0, 0, 0, 0.300);
+    color: white;
+    font-weight: bolder;
 }
 .log{
-    margin: 15px;
+    margin: 35px;
+    font-family: var(--font2);
+    font-size: 1.5em;
 }
-.logo{
-    max-height: 250px;
-    margin-left: 50px;
+.btcad{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.300);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.300);
+    font-family: var(--font2);
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+.btcad:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
 }
