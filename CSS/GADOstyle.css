@@ -291,3 +291,9 @@ body{
     background-color: var(--cor5);
     color: var(--cor1);
 }
+@media(max-width: 800px){
+    .dadoscompra{
+        display: block;
+        
+    }
+}
