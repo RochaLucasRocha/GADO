@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G. A. D. O.</title>
+    <link rel="shortcut icon" href="../imagem/icoGado.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/GADOstyle.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <h1>G. A. D. O.</h1>
+        </a>
+    </header>
+    <!---->
+    <main class="main">
+        <div class="pago">
+            <div class="valor">
+                <p>Dados da Venda</p>
+            </div>
+        </div>
+        <div class="dadoscompra">
+            <p class="dados1">
+                Data : <input type="date" name="data" id="data">
+            </p>
+            <p class="dados1">
+                Identificação : <input type="number" name="identdd" id="identdd">
+            </p>
+            <p class="dados1">
+                Idade : auto pela identidade
+            </p>
+            <p class="dados1">
+                Peso : <input type="number" name="peso" id="peso">
+            </p>
+            <p class="dados1">
+                Preço : <input type="number" name="preco" id="preco">
+            </p>
+            <p class="dados1">
+                Sexo :  auto pela identidade
+            </p>
+            <p class="dados1">
+                Comprador : <input type="text" name="comprador" id="comprador">
+            </p>
+            <input type="button" value="Vender" class="btcad" onclick="vender()">
+        </div>
+        <div class="log">
+
+        </div>
+    </main>
+    <!---->
+    <footer class="footer">
+        <p>
+            Site criado por <a href="https://www.facebook.com/lucas.rocha.140">Lucas Rocha</a> para controle de animais.
+        </p>
+    </footer>
+
+    <script src="../JavaScript/compra.js"></script>
+</body>
+</html>
