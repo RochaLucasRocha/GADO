@@ -15,16 +15,23 @@ function cadastrar(){
     if(hoje.value.length == 0 || hoje.value > ano){
         window.alert('[ERRO] verifique a Data')
     }else{
-        var genero = ''
+        let diaComp = hoje.value
+        let numeroId = Number(identidade.value)
+        let anoIdade = Number(idade.value)
+        let pesa = Number(peso.value)
+        let valor = Number(preco.value)
+        let genero = ''
         if (sex[0].checked){
             genero = 'Macho'
         }else if (sex[1].checked){
             genero = 'Femea'
         }
+        let venddr = vend.value
+
         res.style.marginTop = '30px'
         res.style.textAlign = 'center'
 
-        res.innerHTML = `Data : ${hoje.value} <br>Identificação: ${identidade.value} <br>Idade :${idade.value} <br>Peso :${peso.value} <br>Preço :${preco.value} <br>Sexo :${genero} <br>Vendedor :${vend.value}`
+        res.innerHTML = `Data : ${diaComp} <br>Identificação: ${numeroId} <br>Idade :${anoIdade} <br>Peso :${pesa} <br>Preço :${valor} <br>Sexo :${genero} <br>Vendedor :${venddr}`
     }
     
 }

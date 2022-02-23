@@ -118,7 +118,7 @@ body{
 .mf{
     width: 120px;
     text-align: center;
-    background-image: linear-gradient(to right, var(--cor5), var(--cor1));
+    background-image: linear-gradient(to right, var(--cor5), transparent, var(--cor5));
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.700);
     position: relative;
@@ -242,7 +242,7 @@ body{
         flex: 1 0 60px;
         padding: 0 10px;
     }
-    .sidenav{/* criei um novo aqui para posicionar o paddnig*/
+    .sidenav{/* criei um novo Sidenav aqui para posicionar o paddnig*/
         padding: 30px;
     }
     .imgsid{
