@@ -297,3 +297,31 @@ body{
 
     }
 }
+
+/*CONFIGURAÇÃO PARA relatorio.hatml*/
+.qtdade{
+    background-color: rgba(0, 0, 0, 0.300);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: left;
+}
+.cabecalho{
+    font-family: var(--font2);
+    background-color: black;
+    color: var(--cor1);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.ddos{
+    margin: 10px;
+    font-weight: normal;
+}
+.descricao{
+    margin: 5px;
+    font-family: var(--font2);
+}
+.ajuste{
+    margin-bottom: 30px;
+}
